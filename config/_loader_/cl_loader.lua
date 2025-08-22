@@ -1,0 +1,26 @@
+--[[-------------------------------------------------------------------]]--[[
+							  
+	Copyright wiltOS Technologies LLC, 2022
+	
+	Contact: www.wiltostech.com
+		
+----------------------------------------]]--
+
+wOS = wOS or {}
+wOS.ALCS = wOS.ALCS or {}
+wOS.ALCS.Config = wOS.ALCS.Config or {}
+
+local dir = "wos/advswl/config"
+
+//General Config
+include( dir .. "/general/sh_serverwos.lua" )
+include( dir .. "/general/sh_swlwos.lua" )
+
+//Lightsaber Config
+include( dir .. "/lightsaber/cl_config.lua" )
+
+//Skills Config
+include( dir .. "/skills/sh_skillwos.lua" )
+
+//Crafting Config
+include( dir .. "/crafting/sh_craftwos.lua" )
